@@ -1,0 +1,43 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+% links
+\usepackage{hyperref}
+% foreach macro
+\usepackage{pgffor}
+% file contents utilities
+\usepackage{filecontents}
+\usepackage{array}
+\usepackage{subcaption}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
+
+\begin{document}
+
+\title{End Of Term Paper Title}
+\subtitle{Student ID: ge38rak \\ Winter Term 2020/2021}
+
+\author{Adrian David Castro Tenemaya}
+\email{adrian.castro@tum.de}
+\affiliation{%
+  \institution{Technische Universit{\"a}t M{\"u}nchen}
+}
+
+\begin{abstract}
+    % Abstract here
+
+\end{abstract}
+
+\maketitle
+
+\input{00_Introduction/00_Introduction.tex}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
